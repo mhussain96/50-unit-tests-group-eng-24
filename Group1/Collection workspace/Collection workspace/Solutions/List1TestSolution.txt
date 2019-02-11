@@ -1,0 +1,10 @@
+List<int> listSquare = new List<int>();
+            for (int i = 0; i < mySquareArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < mySquareArray.GetLength(1); j++)
+                {
+                    mySquareArray[i, j] = i * j;
+                    listSquare.Add(mySquareArray[i, j]);
+                }
+            }
+            return listSquare[44];
