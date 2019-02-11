@@ -50,5 +50,16 @@ namespace Collection_workspace
 
             return AnotherStack2.Peek();
         }
+
+        public int AnotherStack3()
+        {
+            Stack<int> AnotherStack3 = new Stack<int>();
+            for (int i = 1; i < 51; i++)
+            {
+                // add 10 to the stack without changing length
+            }
+
+            return AnotherStack3.Peek();
+        }
     }
 }
