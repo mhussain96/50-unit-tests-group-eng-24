@@ -17,18 +17,11 @@ namespace Collection_workspace
     static int[,] mySquareArray = new int[10, 10];
         public int IntegerList()
         {
-            List<int> listSquare = new List<int>();
-            int listSum = 0;
-            for (int i = 0; i < mySquareArray.GetLength(0); i++)
-            {
-                for (int j = 0; j < mySquareArray.GetLength(1); j++)
-                {
-                    mySquareArray[i, j] = i * j;
-                    listSquare.Add(mySquareArray[i, j]);
-                    //listSum += listSquare[i * 10 + j];
-                }
-            }
-            return listSquare[44];
+            //Create a square array with all the values from 0 - 99
+            //Add the values from the array to a list in numerical order
+            //Return the number in the 44th position
+            //Should return 44
+            return -1;
         }
     }
 }
