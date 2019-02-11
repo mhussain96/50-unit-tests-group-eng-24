@@ -1,0 +1,26 @@
+public class myList3
+    {
+        Book HP1 = new Book("Harry Potter and the Philosopher Stone", "J.K. Rowling", 1997);
+        Book HP2 = new Book("Harry Potter and the Chamber of Secrets", "J.K. Rowling", 1998);
+        Book HP3 = new Book("Harry Potter and the Prizoner of Azkaban", "J.K. Rowling", 1999);
+        Book HP4 = new Book("Harry Potter and Goblet of Fire", "J.K Rowling", 2000);
+        public class Book
+        {
+            public Book(string name, string author, int year)
+            {
+
+            }
+            public string BookName { get; set; }
+            public string Author { get; set; }
+            public int releaseYear { get; set; }
+        }
+        public List<Book> Library()
+        { 
+            var booklist = new List<Book>();
+            booklist.Add(HP1);
+            booklist.Add(HP2);
+            booklist.Add(HP3);
+            booklist.Add(HP4);
+            return booklist;
+        }
+    }

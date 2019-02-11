@@ -18,6 +18,8 @@ namespace Collection_workspace
 
 
             Console.WriteLine(myStack);
+            // what does this stack return
+
             return "Something";
         }
 
@@ -33,6 +35,8 @@ namespace Collection_workspace
 
             Console.WriteLine(newStack.Pop());
             Console.WriteLine(newStack.Pop());
+            // how many does this stack return
+
             return -1;
         }
         
@@ -46,18 +50,5 @@ namespace Collection_workspace
 
             return AnotherStack2.Peek();
         }
-
-        //static Stack<int> AnotherStack2 = new Stack<int>();
-
-        //public Stack<int> TestMethod3()
-        //{
-
-        //    for (int i = 0; i < 50; i++)
-        //    {
-
-        //    }
-
-        //    return AnotherStack2;
-        //}
     }
 }
