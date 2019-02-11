@@ -9,6 +9,19 @@ namespace Collections_test
     public class UnitTest1
     {
         [TestMethod]
+
+        public void DictionaryTest1()
+        {
+            //Arrange
+            var dict1 = new CollectionsTesting();
+            var expected = new Dictionary<string, string>();
+            var expectedCount = 5;
+
+            //Act
+            var actual = dict1.DictionaryTest1();
+        }
+    
+  
         public void List1_Test()
         {
             //Arrange
@@ -29,11 +42,14 @@ namespace Collections_test
 
             //Act
             var actual = instance02.ClassList();
+
             var actualCount = actual.Count;
 
             //Assert
             Assert.AreEqual(expectedCount, actualCount);
             Assert.IsInstanceOfType(actual, expected.GetType());
+
+
         }
         [TestMethod]
         public void List3_Test()
@@ -48,6 +64,7 @@ namespace Collections_test
             //Assert
             Assert.AreEqual(expectedCount, actualCount);
             Assert.IsInstanceOfType(actual, expected.GetType());
+
         }
     }
 }
