@@ -54,96 +54,51 @@ namespace SomeTests
         // Using DateTime and AddDays increment the given date by one year
         public string AddADay(int year, int month, int day)
         {
-            DateTime date = new DateTime(year, month, day);
-            date = date.AddDays(365);
-            string test1 = date.ToString();
-            return test1;
+            return "";
         }
         // An Array of integers are provided theyre in a random order
         // create a method that will sort this array in an acsending order
         public int[] BubSort(int[] unsorted)
         {
-            int temp = 0;
-            for (int i = 0; i < unsorted.Length; i++)
-            {
-                for (int j = 0; j < unsorted.Length - 1; j++)
-                {
-                    if (unsorted[j] > unsorted[j + 1])
-                    {
-                        temp = unsorted[j + 1];
-                        unsorted[j + 1] = unsorted[j];
-                        unsorted[j] = temp;
-                    }
-                }
-            }
-            return unsorted;
+            return new int[] { };
         }
 
         // Create a method that will write the string "Hello" reversed
         public string ReverseString(string str)
         {
-            string reverse = null;
-            int l = 0;
-
-            l = str.Length - 1;
-            while (l >= 0)
-            {
-                reverse = reverse + str[l];
-                l--;
-            }
-            return reverse;
+            return str;
         }
 
         //solve 3x^2 + 2x - 1, one of the roots will be the correct answer
         public double Quadratic(int a, int b, int c)
         {
-            double d = 0;
-            double x1 = 0;
-            double x2 = 0;
-
-            d = (b * b) - (4 * a * c);
-            if (d == 0)
-            {
-                x1 = -b / (2 * a);
-                x2 = x1;
-            }
-            else if (d > 0)
-            {
-                x1 = (-b + Math.Sqrt(d)) / (2 * a);
-                x2 = (-b - Math.Sqrt(d)) / (2 * a);
-            }
-            return x2;
+            return 0;
         }
 
         public int Mult(int num1, int num2)
         {
-            int result = num1 * num2;
-            return result;
+            return -1;
         }
 
         public int Test1(int test)
         {
             // create a loop that returns that returns the value of 5 times 29.
-            int total = 0;
-            for (int i = 0; i < test; i++)
-            {
-                total += i + test;
-            }
+            int total = -1;
             return total;
         }
 
         public DateTime Test2()
         {
             // return the date of Christmas 2015.
-            DateTime date = new DateTime(2015, 12, 25);
+            DateTime date = new DateTime(0000, 00, 00);
             return date;
         }
 
         public char Test3(string test)
         {
             // get 5th letter from the word "Named"
-            char[] charTest = test.ToCharArray();
-            return charTest[4];
+            
+            return ' ';
         }
 
         public int Test4(out int sum)
@@ -151,18 +106,6 @@ namespace SomeTests
             // create a loop, return the sum of all the multiples of 4. Also use out the sum of all that is not the multiple of 6.
             int total = 0;
             sum = 0;
-            for (int i = 0; i <= 100; i++)
-            {
-                if (i % 4 == 0)
-                {
-                    total += i;
-                }
-                if (i % 6 != 0)
-                {
-                    sum += i;
-                }
-            }
-
             return total;
         }
     }
