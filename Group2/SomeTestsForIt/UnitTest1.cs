@@ -113,23 +113,66 @@ namespace SomeTestsForIt
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
-        [TestClass]
-        public class CalcTest
+       
+        [TestMethod]
+        public void TestMethod()
         {
-            [TestMethod]
-            public void TestMethod1()
-            {
-                //Arrange 
-                int expected = 50;
-                int num1 = 10;
-                int num2 = 5;
-                var Instance = new SomeTests.SomeTest();
-                //Act
-                int actual = Instance.Mult(num1, num2);
+            //Arrange 
+            int expected = 50;
+            int num1 = 10;
+            int num2 = 5;
+            var Instance = new SomeTests.SomeTest();
+            //Act
+            int actual = Instance.Mult(num1, num2);
 
-                //Assert
-                Assert.AreEqual(expected, actual);
-            }
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestMethod1()
+        {
+            // arrange (setup)
+            var unit = new SomeTests.SomeTest();
+            var expectedOutput = 145;
+            // act (run code)
+            var actualOutput = unit.Test1(10);
+            // assert (see if test pass/fail)
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            // arrange (setup)
+            var unit = new SomeTests.SomeTest();
+            var expectedOutput = "25/12/2015";
+            // act (run code)
+            var actualOutput = unit.Test2();
+            // assert (see if test pass/fail)
+            Assert.AreEqual(expectedOutput, actualOutput.ToShortDateString());
+        }
+        [TestMethod]
+        public void TestMethod3()
+        {
+            // arrange (setup)
+            var unit = new SomeTests.SomeTest();
+            var expectedOutput = 'd';
+            // act (run code)
+            var actualOutput = unit.Test3("Named");
+            // assert (see if test pass/fail)
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+        [TestMethod]
+        public void TestMethod4()
+        {
+            // arrange (setup)
+            var unit = new SomeTests.SomeTest();
+            var expectedOutput = 5534;
+            // act (run code)
+            var actualOutput = unit.Test4(out int sum) + sum;
+            // assert (see if test pass/fail)
+            Assert.AreEqual(expectedOutput, actualOutput);
         }
     }
 }

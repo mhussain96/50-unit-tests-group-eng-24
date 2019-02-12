@@ -120,5 +120,50 @@ namespace SomeTests
             int result = num1 * num2;
             return result;
         }
+
+        public int Test1(int test)
+        {
+            // create a loop that returns that returns the value of 5 times 29.
+            int total = 0;
+            for (int i = 0; i < test; i++)
+            {
+                total += i + test;
+            }
+            return total;
+        }
+
+        public DateTime Test2()
+        {
+            // return the date of Christmas 2015.
+            DateTime date = new DateTime(2015, 12, 25);
+            return date;
+        }
+
+        public char Test3(string test)
+        {
+            // get 5th letter from the word "Named"
+            char[] charTest = test.ToCharArray();
+            return charTest[4];
+        }
+
+        public int Test4(out int sum)
+        {
+            // create a loop, return the sum of all the multiples of 4. Also use out the sum of all that is not the multiple of 6.
+            int total = 0;
+            sum = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                if (i % 4 == 0)
+                {
+                    total += i;
+                }
+                if (i % 6 != 0)
+                {
+                    sum += i;
+                }
+            }
+
+            return total;
+        }
     }
 }
