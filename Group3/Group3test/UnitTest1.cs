@@ -40,5 +40,48 @@ namespace Group3test
             Assert.AreEqual(142.32, arrayInstance.GeometricSeries(10, 1.15, 20));
             Assert.AreEqual(1.55, arrayInstance.GeometricSeries(1, 1.01, 45));
         }
+
+        [TestMethod]
+        public void Check_Array_Sum()
+        {
+            // arrange (setup)
+            var arrayInstance = new Group3tests.Class1();
+            var expectedOutput = 385;
+            // act (run code)
+            var actualOutput = arrayInstance.CreateArray(10);
+
+            // assert (see if test pass /fail)
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+        [TestMethod]
+        public void StackTest()
+        {
+            // arrange
+            var instance01 = new Group3tests.Class1();
+            var expected = 8733475;
+
+            // act
+            var actual = instance01.StackTest();
+
+            // assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void QueueTest()
+        {
+            // arrange
+            var instance01 = new Group3tests.Class1();
+            var expected = 3025;
+
+            // act
+            var actual = instance01.QueueTest();
+
+            // assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
