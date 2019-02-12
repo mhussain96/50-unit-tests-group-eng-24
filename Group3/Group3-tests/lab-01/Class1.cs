@@ -19,7 +19,7 @@ namespace lab_01
             {
                 if (seq[2] == 8.2)
                 { 
-                    sum = seq[i] + 0+1+2+3;
+                    sum = 20.3 + 2.1 + b + 14.4;
                 }
             }
             return sum * (double)13;
@@ -56,7 +56,7 @@ namespace lab_01
         {
             bool isName = false;
             char[] nameTake = {a,b,c,d};
-            string name = nameTake.ToString();
+            string name = new string(nameTake);
             if (name == "jess")
             {
                 isName = true;
