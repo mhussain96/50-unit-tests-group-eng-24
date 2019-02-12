@@ -44,15 +44,24 @@ namespace lab_01
             ages.AddRange(ages);
             foreach (var i in ages)
             {
-                if (value < i)
+                if (value >= i)
                 {
                     isAllowed = true;
                 }
-            }
-           
+            }           
             return isAllowed;
         }
-
-
+        // CHALLENGE FOUR   
+        public bool NameReturn(char a, char b, char c, char d)
+        {
+            bool isName = false;
+            char[] nameTake = {a,b,c,d};
+            string name = nameTake.ToString();
+            if (name == "jess")
+            {
+                isName = true;
+            }
+            return isName;
+        }
     }
 }

@@ -27,5 +27,11 @@ namespace UnitTest1
             var arrayInstance3 = new lab_01.Class1();
             Assert.IsTrue(arrayInstance3.isAllowedEntry(15));
         }
+        [TestMethod]
+        public void TestMethod4()
+        {
+            var arrayInstance4 = new lab_01.Class1();
+            Assert.IsTrue(arrayInstance4.NameReturn('j','e','s','s'));
+        }
     }
 }
